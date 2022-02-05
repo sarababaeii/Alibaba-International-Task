@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE78738127AEDCCC00BF1508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738027AEDCCC00BF1508 /* AppDelegate.swift */; };
-		DE78738327AEDCCC00BF1508 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738227AEDCCC00BF1508 /* SceneDelegate.swift */; };
-		DE78738527AEDCCC00BF1508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738427AEDCCC00BF1508 /* ViewController.swift */; };
 		DE78738827AEDCCC00BF1508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE78738627AEDCCC00BF1508 /* Main.storyboard */; };
 		DE78738A27AEDCD000BF1508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78738927AEDCD000BF1508 /* Assets.xcassets */; };
 		DE78738D27AEDCD000BF1508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE78738B27AEDCD000BF1508 /* LaunchScreen.storyboard */; };
 		DE78739827AEDCD100BF1508 /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78739727AEDCD100BF1508 /* TaskTests.swift */; };
 		DE7873A327AEDCD100BF1508 /* TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873A227AEDCD100BF1508 /* TaskUITests.swift */; };
+		DE7873B527AEE01200BF1508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738427AEDCCC00BF1508 /* ViewController.swift */; };
+		DE7873B627AEE02600BF1508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738027AEDCCC00BF1508 /* AppDelegate.swift */; };
+		DE7873B727AEE03200BF1508 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738227AEDCCC00BF1508 /* SceneDelegate.swift */; };
+		DE7873BB27AEE6E800BF1508 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873BA27AEE6E800BF1508 /* CustomUIView.swift */; };
+		DE7873BF27AEEDD400BF1508 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873BE27AEEDD400BF1508 /* CustomButton.swift */; };
+		DE7873C127AEEE1700BF1508 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873C027AEEE1700BF1508 /* RoundedView.swift */; };
+		DE7873C327AEEE3F00BF1508 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873C227AEEE3F00BF1508 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		DE78739E27AEDCD100BF1508 /* TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7873A227AEDCD100BF1508 /* TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUITests.swift; sourceTree = "<group>"; };
 		DE7873A427AEDCD100BF1508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7873BA27AEE6E800BF1508 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		DE7873BE27AEEDD400BF1508 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		DE7873C027AEEE1700BF1508 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		DE7873C227AEEE3F00BF1508 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +107,11 @@
 		DE78737F27AEDCCC00BF1508 /* Task */ = {
 			isa = PBXGroup;
 			children = (
-				DE78738027AEDCCC00BF1508 /* AppDelegate.swift */,
-				DE78738227AEDCCC00BF1508 /* SceneDelegate.swift */,
-				DE78738427AEDCCC00BF1508 /* ViewController.swift */,
-				DE78738627AEDCCC00BF1508 /* Main.storyboard */,
-				DE78738927AEDCD000BF1508 /* Assets.xcassets */,
-				DE78738B27AEDCD000BF1508 /* LaunchScreen.storyboard */,
-				DE78738E27AEDCD000BF1508 /* Info.plist */,
+				DE7873B227AEDD2F00BF1508 /* Model */,
+				DE7873B127AEDD2900BF1508 /* View */,
+				DE7873B027AEDD1E00BF1508 /* Controller */,
+				DE7873B427AEDDA100BF1508 /* Resources */,
+				DE7873B327AEDD3D00BF1508 /* SupportingFiles */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -126,6 +132,76 @@
 				DE7873A427AEDCD100BF1508 /* Info.plist */,
 			);
 			path = TaskUITests;
+			sourceTree = "<group>";
+		};
+		DE7873B027AEDD1E00BF1508 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE78738427AEDCCC00BF1508 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE7873B127AEDD2900BF1508 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE7873B927AEE6C800BF1508 /* Components */,
+				DE78738627AEDCCC00BF1508 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE7873B227AEDD2F00BF1508 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE7873B327AEDD3D00BF1508 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DE78738027AEDCCC00BF1508 /* AppDelegate.swift */,
+				DE78738227AEDCCC00BF1508 /* SceneDelegate.swift */,
+				DE78738B27AEDCD000BF1508 /* LaunchScreen.storyboard */,
+				DE78738E27AEDCD000BF1508 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DE7873B427AEDDA100BF1508 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE78738927AEDCD000BF1508 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE7873B927AEE6C800BF1508 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DE7873BD27AEEDC300BF1508 /* Button */,
+				DE7873BC27AEE6F400BF1508 /* UIView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DE7873BC27AEE6F400BF1508 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				DE7873BA27AEE6E800BF1508 /* CustomUIView.swift */,
+				DE7873C027AEEE1700BF1508 /* RoundedView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		DE7873BD27AEEDC300BF1508 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				DE7873BE27AEEDD400BF1508 /* CustomButton.swift */,
+				DE7873C227AEEE3F00BF1508 /* RoundedButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE78738527AEDCCC00BF1508 /* ViewController.swift in Sources */,
-				DE78738127AEDCCC00BF1508 /* AppDelegate.swift in Sources */,
-				DE78738327AEDCCC00BF1508 /* SceneDelegate.swift in Sources */,
+				DE7873B527AEE01200BF1508 /* ViewController.swift in Sources */,
+				DE7873BB27AEE6E800BF1508 /* CustomUIView.swift in Sources */,
+				DE7873C127AEEE1700BF1508 /* RoundedView.swift in Sources */,
+				DE7873B627AEE02600BF1508 /* AppDelegate.swift in Sources */,
+				DE7873C327AEEE3F00BF1508 /* RoundedButton.swift in Sources */,
+				DE7873B727AEE03200BF1508 /* SceneDelegate.swift in Sources */,
+				DE7873BF27AEEDD400BF1508 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,12 +517,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3QN7DG53LR;
-				INFOPLIST_FILE = Task/Info.plist;
+				INFOPLIST_FILE = Task/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alibaba.international.Task;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -456,12 +539,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3QN7DG53LR;
-				INFOPLIST_FILE = Task/Info.plist;
+				INFOPLIST_FILE = Task/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alibaba.international.Task;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
