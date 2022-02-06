@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Task" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtV-2j-t9N" userLabel="View0" customClass="RoundedView" customModule="Task" customModuleProvider="target">
-                                <rect key="frame" x="24" y="88" width="327" height="218"/>
+                                <rect key="frame" x="24" y="112" width="327" height="218"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAK-wE-PU0" userLabel="View0.0" customClass="RoundedView" customModule="Task" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="150"/>
@@ -51,7 +51,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ik4-H8-Qek" userLabel="View0.1" customClass="RoundedView" customModule="Task" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="167.66666666666666" width="327" height="50.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="167.66666666666669" width="327" height="50.333333333333343"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZgL-LS-OuA" userLabel="View0.1.0" customClass="RoundedView" customModule="Task" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="50.333333333333336" height="50.333333333333336"/>
@@ -122,7 +122,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzP-Od-TTI" customClass="BlueBorderedView" customModule="Task" customModuleProvider="target">
-                                <rect key="frame" x="24" y="318" width="327" height="128"/>
+                                <rect key="frame" x="24" y="342" width="327" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQq-tS-hRP" customClass="HeaderLabel" customModule="Task" customModuleProvider="target">
                                         <rect key="frame" x="12.000000000000007" y="18" width="117.66666666666669" height="21"/>
@@ -144,11 +144,19 @@
                                         <state key="normal">
                                             <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
                                         </state>
+                                        <connections>
+                                            <action selector="closeWelcomeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jF-d3-f8D"/>
+                                        </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fqs-ok-EgP">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fqs-ok-EgP" customClass="BottomBorderedTextField" customModule="Task" customModuleProvider="target">
                                         <rect key="frame" x="12" y="97" width="216" height="19"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.188026309" green="0.69001793860000005" blue="0.77955490350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" textContentType="location"/>
+                                        <connections>
+                                            <action selector="searchDestination:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="fsN-Jn-hh2"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQ3-8G-Pw5" customClass="AccentButton" customModule="Task" customModuleProvider="target">
                                         <rect key="frame" x="240" y="86" width="75" height="30"/>
@@ -159,6 +167,10 @@
                                         <state key="normal" title="Let's go!">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="searchDestination:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQQ-dd-uzM"/>
+                                            <segue destination="Zd5-qA-QF5" kind="show" id="AA4-2z-QXa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -180,23 +192,23 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a76-dS-L1P">
-                                <rect key="frame" x="24" y="470" width="327" height="308"/>
+                                <rect key="frame" x="24" y="494" width="327" height="284"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Users" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkt-lX-R0w" customClass="HeaderLabel" customModule="Task" customModuleProvider="target">
-                                        <rect key="frame" x="12" y="12" width="77" height="21"/>
+                                        <rect key="frame" x="0.0" y="12" width="77" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NfA-IW-yza">
-                                        <rect key="frame" x="0.0" y="45" width="327" height="263"/>
+                                        <rect key="frame" x="0.0" y="45" width="327" height="239"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellID" id="lnB-JN-kuD">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserCellID" id="lnB-JN-kuD" customClass="UserTableViewCell" customModule="Task" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="24.333333969116211" width="327" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lnB-JN-kuD" id="20b-zL-O0M">
@@ -247,6 +259,11 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="userEmailLabel" destination="1b6-wP-hVE" id="gpe-va-LTA"/>
+                                                    <outlet property="userImageView" destination="aBU-s5-z64" id="cxl-Gh-D1c"/>
+                                                    <outlet property="userNameLabel" destination="ern-kI-u0y" id="gBS-34-tOa"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -258,7 +275,7 @@
                                     <constraint firstAttribute="bottom" secondItem="NfA-IW-yza" secondAttribute="bottom" id="EFd-C2-82h"/>
                                     <constraint firstItem="NfA-IW-yza" firstAttribute="leading" secondItem="a76-dS-L1P" secondAttribute="leading" id="Fn1-0q-Tnt"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xkt-lX-R0w" secondAttribute="trailing" constant="20" symbolic="YES" id="NCa-hc-5Vl"/>
-                                    <constraint firstItem="xkt-lX-R0w" firstAttribute="leading" secondItem="a76-dS-L1P" secondAttribute="leading" constant="12" id="Sed-iQ-q4V"/>
+                                    <constraint firstItem="xkt-lX-R0w" firstAttribute="leading" secondItem="a76-dS-L1P" secondAttribute="leading" id="Sed-iQ-q4V"/>
                                     <constraint firstItem="NfA-IW-yza" firstAttribute="top" secondItem="xkt-lX-R0w" secondAttribute="bottom" constant="12" id="x7T-2i-qXN"/>
                                 </constraints>
                             </view>
@@ -274,20 +291,64 @@
                             <constraint firstItem="a76-dS-L1P" firstAttribute="leading" secondItem="EtV-2j-t9N" secondAttribute="leading" id="W4Z-iK-UWd"/>
                             <constraint firstItem="a76-dS-L1P" firstAttribute="trailing" secondItem="EtV-2j-t9N" secondAttribute="trailing" id="ZSJ-iW-VlL"/>
                             <constraint firstItem="a76-dS-L1P" firstAttribute="top" secondItem="RzP-Od-TTI" secondAttribute="bottom" constant="24" id="fSw-aV-JaL"/>
-                            <constraint firstItem="EtV-2j-t9N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="i0C-fg-HVo"/>
+                            <constraint firstItem="EtV-2j-t9N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="i0C-fg-HVo"/>
                             <constraint firstItem="RzP-Od-TTI" firstAttribute="top" secondItem="EtV-2j-t9N" secondAttribute="bottom" constant="12" id="vqD-D7-9vm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H6n-i3-jAZ"/>
+                    <connections>
+                        <outlet property="destinationTextField" destination="fqs-ok-EgP" id="cjF-du-3re"/>
+                        <outlet property="searchDestinationButton" destination="nQ3-8G-Pw5" id="s3A-ns-m3R"/>
+                        <outlet property="usersTableView" destination="NfA-IW-yza" id="2Gb-GB-ra3"/>
+                        <outlet property="welcomeView" destination="RzP-Od-TTI" id="ZB4-oC-Nw0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="774" y="78"/>
         </scene>
+        <!--Search-->
+        <scene sceneID="2tY-fu-dqa">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zd5-qA-QF5" customClass="SearchViewController" customModule="Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xAV-kM-dKa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLb-Yq-xNN" customClass="AccentButton" customModule="Task" customModuleProvider="target">
+                                <rect key="frame" x="24" y="728" width="327" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RDY-cs-72v"/>
+                                </constraints>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="search:" destination="Zd5-qA-QF5" eventType="touchUpInside" id="WWe-5b-UtV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gWv-wL-kOY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gWv-wL-kOY" firstAttribute="trailing" secondItem="oLb-Yq-xNN" secondAttribute="trailing" constant="24" id="Naj-H7-qSw"/>
+                            <constraint firstItem="gWv-wL-kOY" firstAttribute="bottom" secondItem="oLb-Yq-xNN" secondAttribute="bottom" id="R5o-s0-8tH"/>
+                            <constraint firstItem="oLb-Yq-xNN" firstAttribute="leading" secondItem="gWv-wL-kOY" secondAttribute="leading" constant="24" id="UIf-M7-Ud7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="9PV-RP-F88"/>
+                    <connections>
+                        <outlet property="searchButton" destination="oLb-Yq-xNN" id="1b7-ik-P9G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pRp-T5-Q6G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="78"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="aqN-Rn-L0w">
             <objects>
-                <navigationController id="k5e-by-a2c" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavigationControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k5e-by-a2c" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mSv-9f-gOx">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

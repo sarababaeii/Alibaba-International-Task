@@ -12,7 +12,7 @@
 		DE78738D27AEDCD000BF1508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE78738B27AEDCD000BF1508 /* LaunchScreen.storyboard */; };
 		DE78739827AEDCD100BF1508 /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78739727AEDCD100BF1508 /* TaskTests.swift */; };
 		DE7873A327AEDCD100BF1508 /* TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873A227AEDCD100BF1508 /* TaskUITests.swift */; };
-		DE7873B527AEE01200BF1508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738427AEDCCC00BF1508 /* ViewController.swift */; };
+		DE7873B527AEE01200BF1508 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738427AEDCCC00BF1508 /* HomeViewController.swift */; };
 		DE7873B627AEE02600BF1508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738027AEDCCC00BF1508 /* AppDelegate.swift */; };
 		DE7873B727AEE03200BF1508 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738227AEDCCC00BF1508 /* SceneDelegate.swift */; };
 		DE7873BB27AEE6E800BF1508 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873BA27AEE6E800BF1508 /* CustomView.swift */; };
@@ -29,6 +29,15 @@
 		DEF8970127AFC0D1008371CF /* BodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8970027AFC0D1008371CF /* BodyLabel.swift */; };
 		DEF8970327AFC3B3008371CF /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8970227AFC3B3008371CF /* CloseButton.swift */; };
 		DEF8970527B02820008371CF /* GrayBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8970427B02820008371CF /* GrayBorderedView.swift */; };
+		DEF8970727B04C0B008371CF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8970627B04C0B008371CF /* SearchViewController.swift */; };
+		DEF8970927B04CCD008371CF /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8970827B04CCD008371CF /* UserTableViewCell.swift */; };
+		DEF8970F27B04DAA008371CF /* UsersTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8970E27B04DAA008371CF /* UsersTableViewDelegate.swift */; };
+		DEF8971127B04E2B008371CF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8971027B04E2B008371CF /* Strings.swift */; };
+		DEF8971327B0525D008371CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8971227B0525D008371CF /* User.swift */; };
+		DEF8971527B058E5008371CF /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8971427B058E5008371CF /* UIViewController.swift */; };
+		DEF8971827B05C22008371CF /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8971727B05C22008371CF /* UITextField.swift */; };
+		DEF8971A27B05F8B008371CF /* BottomBorderedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8971927B05F8B008371CF /* BottomBorderedTextField.swift */; };
+		DEF8971C27B0621C008371CF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8971B27B0621C008371CF /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +61,7 @@
 		DE78737D27AEDCCC00BF1508 /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE78738027AEDCCC00BF1508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE78738227AEDCCC00BF1508 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE78738427AEDCCC00BF1508 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE78738427AEDCCC00BF1508 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DE78738727AEDCCC00BF1508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE78738927AEDCD000BF1508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE78738C27AEDCD000BF1508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +86,15 @@
 		DEF8970027AFC0D1008371CF /* BodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLabel.swift; sourceTree = "<group>"; };
 		DEF8970227AFC3B3008371CF /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		DEF8970427B02820008371CF /* GrayBorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayBorderedView.swift; sourceTree = "<group>"; };
+		DEF8970627B04C0B008371CF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DEF8970827B04CCD008371CF /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		DEF8970E27B04DAA008371CF /* UsersTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewDelegate.swift; sourceTree = "<group>"; };
+		DEF8971027B04E2B008371CF /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		DEF8971227B0525D008371CF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DEF8971427B058E5008371CF /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		DEF8971727B05C22008371CF /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		DEF8971927B05F8B008371CF /* BottomBorderedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBorderedTextField.swift; sourceTree = "<group>"; };
+		DEF8971B27B0621C008371CF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +175,8 @@
 		DE7873B027AEDD1E00BF1508 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DE78738427AEDCCC00BF1508 /* ViewController.swift */,
+				DE78738427AEDCCC00BF1508 /* HomeViewController.swift */,
+				DEF8970627B04C0B008371CF /* SearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +184,7 @@
 		DE7873B127AEDD2900BF1508 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DEF8970A27B04CD3008371CF /* Cells */,
 				DE7873B927AEE6C800BF1508 /* Components */,
 				DE78738627AEDCCC00BF1508 /* Main.storyboard */,
 			);
@@ -174,6 +194,8 @@
 		DE7873B227AEDD2F00BF1508 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DEF8971227B0525D008371CF /* User.swift */,
+				DEF8970C27B04D8C008371CF /* Delegates */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +217,7 @@
 				DE78738927AEDCD000BF1508 /* Assets.xcassets */,
 				DEF896F327AFB7F6008371CF /* UIColor.swift */,
 				DEF896FC27AFBE4F008371CF /* UIFont.swift */,
+				DEF8971027B04E2B008371CF /* Strings.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -205,6 +228,8 @@
 				DE7873BC27AEE6F400BF1508 /* UIView */,
 				DE7873BD27AEEDC300BF1508 /* UIButton */,
 				DEF896F927AFBACB008371CF /* UILabel */,
+				DEF8971627B05BDE008371CF /* UITextField */,
+				DEF8971427B058E5008371CF /* UIViewController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -240,6 +265,48 @@
 				DEF8970027AFC0D1008371CF /* BodyLabel.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		DEF8970A27B04CD3008371CF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8970B27B04CE7008371CF /* TableViewCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DEF8970B27B04CE7008371CF /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8970827B04CCD008371CF /* UserTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		DEF8970C27B04D8C008371CF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8970D27B04D94008371CF /* TableViewDelegates */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		DEF8970D27B04D94008371CF /* TableViewDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8970E27B04DAA008371CF /* UsersTableViewDelegate.swift */,
+			);
+			path = TableViewDelegates;
+			sourceTree = "<group>";
+		};
+		DEF8971627B05BDE008371CF /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8971727B05C22008371CF /* UITextField.swift */,
+				DEF8971B27B0621C008371CF /* CustomTextField.swift */,
+				DEF8971927B05F8B008371CF /* BottomBorderedTextField.swift */,
+			);
+			path = UITextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,23 +439,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE7873B527AEE01200BF1508 /* ViewController.swift in Sources */,
+				DEF8971C27B0621C008371CF /* CustomTextField.swift in Sources */,
+				DE7873B527AEE01200BF1508 /* HomeViewController.swift in Sources */,
 				DE7873BB27AEE6E800BF1508 /* CustomView.swift in Sources */,
 				DE7873C127AEEE1700BF1508 /* RoundedView.swift in Sources */,
 				DEF896F227AFB795008371CF /* BlueBorderedView.swift in Sources */,
+				DEF8971A27B05F8B008371CF /* BottomBorderedTextField.swift in Sources */,
 				DEF896F427AFB7F6008371CF /* UIColor.swift in Sources */,
 				DE7873B627AEE02600BF1508 /* AppDelegate.swift in Sources */,
+				DEF8971527B058E5008371CF /* UIViewController.swift in Sources */,
 				DEF8970527B02820008371CF /* GrayBorderedView.swift in Sources */,
 				DE7873C327AEEE3F00BF1508 /* RoundedButton.swift in Sources */,
 				DEF896FF27AFC08F008371CF /* HeaderLabel.swift in Sources */,
 				DEF896FB27AFBB10008371CF /* CustomLabel.swift in Sources */,
+				DEF8971827B05C22008371CF /* UITextField.swift in Sources */,
+				DEF8971327B0525D008371CF /* User.swift in Sources */,
 				DEF896F827AFBA7B008371CF /* AccentButton.swift in Sources */,
 				DEF896FD27AFBE4F008371CF /* UIFont.swift in Sources */,
+				DEF8970927B04CCD008371CF /* UserTableViewCell.swift in Sources */,
+				DEF8971127B04E2B008371CF /* Strings.swift in Sources */,
+				DEF8970727B04C0B008371CF /* SearchViewController.swift in Sources */,
 				DE7873B727AEE03200BF1508 /* SceneDelegate.swift in Sources */,
 				DEF8970127AFC0D1008371CF /* BodyLabel.swift in Sources */,
 				DE7873BF27AEEDD400BF1508 /* CustomButton.swift in Sources */,
 				DEF8970327AFC3B3008371CF /* CloseButton.swift in Sources */,
 				DEF896F627AFB872008371CF /* BorderedRoundedView.swift in Sources */,
+				DEF8970F27B04DAA008371CF /* UsersTableViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
