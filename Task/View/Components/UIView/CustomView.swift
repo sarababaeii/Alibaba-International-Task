@@ -1,5 +1,5 @@
 //
-//  CustomUIView.swift
+//  CustomView.swift
 //  Task
 //
 //  Created by Sara Babaei on 2/5/22.

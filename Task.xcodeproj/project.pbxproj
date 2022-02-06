@@ -15,10 +15,20 @@
 		DE7873B527AEE01200BF1508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738427AEDCCC00BF1508 /* ViewController.swift */; };
 		DE7873B627AEE02600BF1508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738027AEDCCC00BF1508 /* AppDelegate.swift */; };
 		DE7873B727AEE03200BF1508 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78738227AEDCCC00BF1508 /* SceneDelegate.swift */; };
-		DE7873BB27AEE6E800BF1508 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873BA27AEE6E800BF1508 /* CustomUIView.swift */; };
+		DE7873BB27AEE6E800BF1508 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873BA27AEE6E800BF1508 /* CustomView.swift */; };
 		DE7873BF27AEEDD400BF1508 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873BE27AEEDD400BF1508 /* CustomButton.swift */; };
 		DE7873C127AEEE1700BF1508 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873C027AEEE1700BF1508 /* RoundedView.swift */; };
 		DE7873C327AEEE3F00BF1508 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873C227AEEE3F00BF1508 /* RoundedButton.swift */; };
+		DEF896F227AFB795008371CF /* BlueBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896F127AFB795008371CF /* BlueBorderedView.swift */; };
+		DEF896F427AFB7F6008371CF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896F327AFB7F6008371CF /* UIColor.swift */; };
+		DEF896F627AFB872008371CF /* BorderedRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896F527AFB872008371CF /* BorderedRoundedView.swift */; };
+		DEF896F827AFBA7B008371CF /* AccentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896F727AFBA7B008371CF /* AccentButton.swift */; };
+		DEF896FB27AFBB10008371CF /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896FA27AFBB10008371CF /* CustomLabel.swift */; };
+		DEF896FD27AFBE4F008371CF /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896FC27AFBE4F008371CF /* UIFont.swift */; };
+		DEF896FF27AFC08F008371CF /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896FE27AFC08F008371CF /* HeaderLabel.swift */; };
+		DEF8970127AFC0D1008371CF /* BodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8970027AFC0D1008371CF /* BodyLabel.swift */; };
+		DEF8970327AFC3B3008371CF /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8970227AFC3B3008371CF /* CloseButton.swift */; };
+		DEF8970527B02820008371CF /* GrayBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8970427B02820008371CF /* GrayBorderedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +63,20 @@
 		DE78739E27AEDCD100BF1508 /* TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7873A227AEDCD100BF1508 /* TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUITests.swift; sourceTree = "<group>"; };
 		DE7873A427AEDCD100BF1508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE7873BA27AEE6E800BF1508 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		DE7873BA27AEE6E800BF1508 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		DE7873BE27AEEDD400BF1508 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		DE7873C027AEEE1700BF1508 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		DE7873C227AEEE3F00BF1508 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		DEF896F127AFB795008371CF /* BlueBorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBorderedView.swift; sourceTree = "<group>"; };
+		DEF896F327AFB7F6008371CF /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		DEF896F527AFB872008371CF /* BorderedRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedRoundedView.swift; sourceTree = "<group>"; };
+		DEF896F727AFBA7B008371CF /* AccentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButton.swift; sourceTree = "<group>"; };
+		DEF896FA27AFBB10008371CF /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		DEF896FC27AFBE4F008371CF /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		DEF896FE27AFC08F008371CF /* HeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
+		DEF8970027AFC0D1008371CF /* BodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLabel.swift; sourceTree = "<group>"; };
+		DEF8970227AFC3B3008371CF /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		DEF8970427B02820008371CF /* GrayBorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayBorderedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				DE78738927AEDCD000BF1508 /* Assets.xcassets */,
+				DEF896F327AFB7F6008371CF /* UIColor.swift */,
+				DEF896FC27AFBE4F008371CF /* UIFont.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -180,8 +202,9 @@
 		DE7873B927AEE6C800BF1508 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				DE7873BD27AEEDC300BF1508 /* Button */,
 				DE7873BC27AEE6F400BF1508 /* UIView */,
+				DE7873BD27AEEDC300BF1508 /* UIButton */,
+				DEF896F927AFBACB008371CF /* UILabel */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -189,19 +212,34 @@
 		DE7873BC27AEE6F400BF1508 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				DE7873BA27AEE6E800BF1508 /* CustomUIView.swift */,
+				DE7873BA27AEE6E800BF1508 /* CustomView.swift */,
 				DE7873C027AEEE1700BF1508 /* RoundedView.swift */,
+				DEF896F527AFB872008371CF /* BorderedRoundedView.swift */,
+				DEF896F127AFB795008371CF /* BlueBorderedView.swift */,
+				DEF8970427B02820008371CF /* GrayBorderedView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		DE7873BD27AEEDC300BF1508 /* Button */ = {
+		DE7873BD27AEEDC300BF1508 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
 				DE7873BE27AEEDD400BF1508 /* CustomButton.swift */,
 				DE7873C227AEEE3F00BF1508 /* RoundedButton.swift */,
+				DEF896F727AFBA7B008371CF /* AccentButton.swift */,
+				DEF8970227AFC3B3008371CF /* CloseButton.swift */,
 			);
-			path = Button;
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		DEF896F927AFBACB008371CF /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				DEF896FA27AFBB10008371CF /* CustomLabel.swift */,
+				DEF896FE27AFC08F008371CF /* HeaderLabel.swift */,
+				DEF8970027AFC0D1008371CF /* BodyLabel.swift */,
+			);
+			path = UILabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,12 +373,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7873B527AEE01200BF1508 /* ViewController.swift in Sources */,
-				DE7873BB27AEE6E800BF1508 /* CustomUIView.swift in Sources */,
+				DE7873BB27AEE6E800BF1508 /* CustomView.swift in Sources */,
 				DE7873C127AEEE1700BF1508 /* RoundedView.swift in Sources */,
+				DEF896F227AFB795008371CF /* BlueBorderedView.swift in Sources */,
+				DEF896F427AFB7F6008371CF /* UIColor.swift in Sources */,
 				DE7873B627AEE02600BF1508 /* AppDelegate.swift in Sources */,
+				DEF8970527B02820008371CF /* GrayBorderedView.swift in Sources */,
 				DE7873C327AEEE3F00BF1508 /* RoundedButton.swift in Sources */,
+				DEF896FF27AFC08F008371CF /* HeaderLabel.swift in Sources */,
+				DEF896FB27AFBB10008371CF /* CustomLabel.swift in Sources */,
+				DEF896F827AFBA7B008371CF /* AccentButton.swift in Sources */,
+				DEF896FD27AFBE4F008371CF /* UIFont.swift in Sources */,
 				DE7873B727AEE03200BF1508 /* SceneDelegate.swift in Sources */,
+				DEF8970127AFC0D1008371CF /* BodyLabel.swift in Sources */,
 				DE7873BF27AEEDD400BF1508 /* CustomButton.swift in Sources */,
+				DEF8970327AFC3B3008371CF /* CloseButton.swift in Sources */,
+				DEF896F627AFB872008371CF /* BorderedRoundedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
