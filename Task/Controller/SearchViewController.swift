@@ -7,13 +7,12 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: DestinationyViewController {
 
     @IBOutlet weak var originTextField: BottomBorderedTextField!
-    @IBOutlet weak var destinationTextField: BottomBorderedTextField!
-    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
-    var destination = ""
+    var callback: ((String) -> Void)?
     
     //MARK: Navigation Bar Visibility
     override func viewWillAppear(_ animated: Bool) {
@@ -27,15 +26,20 @@ class SearchViewController: UIViewController {
         configure()
     }
     
-    private func configure() {
-        setDestinationText(to: destination)
-    }
-
-    private func setDestinationText(to dest: String) {
-        destinationTextField.text = dest
+//    override func configure() {
+//        super.configure()
+////        datePicker.setUp(mode: .date)
+//    }
+    
+    override func initializeTextFields() {
+        textFields = [originTextField, destinationTextField]
     }
     
     @IBAction func search(_ sender: Any) {
+        if let destination = destinationTextField.fetchInput() {
+            callback?(destination)
+        }
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

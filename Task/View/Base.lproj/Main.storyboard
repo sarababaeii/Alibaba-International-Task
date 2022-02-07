@@ -155,7 +155,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" textContentType="location"/>
                                         <connections>
-                                            <action selector="destinationTextFieldIsEditing:" destination="BYZ-38-t0r" eventType="editingChanged" id="0mO-bi-79P"/>
                                             <action selector="searchDestination:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="fsN-Jn-hh2"/>
                                         </connections>
                                     </textField>
@@ -304,8 +303,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="H6n-i3-jAZ"/>
                     <connections>
-                        <outlet property="destinationTextField" destination="fqs-ok-EgP" id="cjF-du-3re"/>
-                        <outlet property="searchDestinationButton" destination="nQ3-8G-Pw5" id="s3A-ns-m3R"/>
+                        <outlet property="destinationTextField" destination="fqs-ok-EgP" id="6tc-dg-nk5"/>
+                        <outlet property="searchButton" destination="nQ3-8G-Pw5" id="Lg7-6B-UjE"/>
                         <outlet property="usersTableView" destination="NfA-IW-yza" id="2Gb-GB-ra3"/>
                         <outlet property="usersViewTopConstraint" destination="zNr-3P-rIg" id="ydL-hb-Wg3"/>
                         <outlet property="welcomeView" destination="RzP-Od-TTI" id="ZB4-oC-Nw0"/>
@@ -323,7 +322,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMN-J7-cU0">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMN-J7-cU0" userLabel="View0">
                                 <rect key="frame" x="18" y="112" width="345" height="100"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="From" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DCv-P4-Xtb" customClass="BottomBorderedTextField" customModule="Task" customModuleProvider="target">
@@ -336,7 +335,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="location"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFZ-tu-cE9" customClass="BottomBorderedTextField" customModule="Task" customModuleProvider="target">
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFZ-tu-cE9" customClass="BottomBorderedTextField" customModule="Task" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55" width="345" height="45"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.188026309" green="0.69001793860000005" blue="0.77955490350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -358,7 +357,7 @@
                                     <constraint firstItem="iFZ-tu-cE9" firstAttribute="leading" secondItem="UMN-J7-cU0" secondAttribute="leading" id="yub-IY-FRl"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLb-Yq-xNN" customClass="AccentButton" customModule="Task" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLb-Yq-xNN" customClass="AccentButton" customModule="Task" customModuleProvider="target">
                                 <rect key="frame" x="24" y="728" width="327" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="RDY-cs-72v"/>
@@ -370,6 +369,28 @@
                                     <action selector="search:" destination="Zd5-qA-QF5" eventType="touchUpInside" id="WWe-5b-UtV"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ksd-Vo-vAr" userLabel="View1">
+                                <rect key="frame" x="18" y="236" width="345" height="189.66666666666663"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRT-6Z-Yrm" customClass="DateModeDatePicker" customModule="Task" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="189.66666666666666"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="666035394.97578597">
+                                            <!--2022-02-08 17:49:54 +0000-->
+                                        </date>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                            <!--1970-01-01 11:00:00 +0000-->
+                                        </date>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="CRT-6Z-Yrm" firstAttribute="leading" secondItem="Ksd-Vo-vAr" secondAttribute="leading" id="7PU-Fe-CfH"/>
+                                    <constraint firstAttribute="width" secondItem="Ksd-Vo-vAr" secondAttribute="height" multiplier="2:1.1" id="gA5-KR-uni"/>
+                                    <constraint firstItem="CRT-6Z-Yrm" firstAttribute="top" secondItem="Ksd-Vo-vAr" secondAttribute="top" id="pjZ-C7-Ymp"/>
+                                    <constraint firstAttribute="trailing" secondItem="CRT-6Z-Yrm" secondAttribute="trailing" id="sCN-L4-FE4"/>
+                                    <constraint firstAttribute="bottom" secondItem="CRT-6Z-Yrm" secondAttribute="bottom" id="skS-5s-czz"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gWv-wL-kOY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -378,15 +399,19 @@
                             <constraint firstItem="gWv-wL-kOY" firstAttribute="trailing" secondItem="UMN-J7-cU0" secondAttribute="trailing" constant="12" id="Art-VQ-Gns"/>
                             <constraint firstItem="UMN-J7-cU0" firstAttribute="leading" secondItem="gWv-wL-kOY" secondAttribute="leading" constant="18" id="JLK-Ec-Tyc"/>
                             <constraint firstItem="gWv-wL-kOY" firstAttribute="trailing" secondItem="oLb-Yq-xNN" secondAttribute="trailing" constant="24" id="Naj-H7-qSw"/>
+                            <constraint firstItem="Ksd-Vo-vAr" firstAttribute="leading" secondItem="UMN-J7-cU0" secondAttribute="leading" id="PO8-R9-DgE"/>
                             <constraint firstItem="gWv-wL-kOY" firstAttribute="bottom" secondItem="oLb-Yq-xNN" secondAttribute="bottom" id="R5o-s0-8tH"/>
+                            <constraint firstItem="Ksd-Vo-vAr" firstAttribute="top" secondItem="UMN-J7-cU0" secondAttribute="bottom" constant="24" id="Thf-XJ-aB6"/>
                             <constraint firstItem="oLb-Yq-xNN" firstAttribute="leading" secondItem="gWv-wL-kOY" secondAttribute="leading" constant="24" id="UIf-M7-Ud7"/>
+                            <constraint firstItem="Ksd-Vo-vAr" firstAttribute="trailing" secondItem="UMN-J7-cU0" secondAttribute="trailing" id="ViY-42-T0s"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="9PV-RP-F88"/>
                     <connections>
-                        <outlet property="destinationTextField" destination="iFZ-tu-cE9" id="Pqy-FG-WXq"/>
+                        <outlet property="datePicker" destination="CRT-6Z-Yrm" id="mXl-gd-bMb"/>
+                        <outlet property="destinationTextField" destination="iFZ-tu-cE9" id="Qg1-Na-Cth"/>
                         <outlet property="originTextField" destination="DCv-P4-Xtb" id="oJl-0k-DyO"/>
-                        <outlet property="searchButton" destination="oLb-Yq-xNN" id="1b7-ik-P9G"/>
+                        <outlet property="searchButton" destination="oLb-Yq-xNN" id="Ylg-Pn-yTn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pRp-T5-Q6G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
