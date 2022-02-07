@@ -10,8 +10,8 @@ import UIKit
 class UserTableViewCell: UITableViewCell {
     
     @IBOutlet weak var userImageView: UIImageView!
-    @IBOutlet weak var userNameLabel: HeaderLabel!
-    @IBOutlet weak var userEmailLabel: BodyLabel!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var userEmailLabel: UILabel!
     
     func setAttributes(for user: User) {
         setName(for: user)

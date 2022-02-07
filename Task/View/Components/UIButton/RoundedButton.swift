@@ -15,6 +15,6 @@ import UIKit
     }
     
     private func setRadius() {
-        self.cornerRadius = 6
+        self.cornerRadius = 8
     }
 }

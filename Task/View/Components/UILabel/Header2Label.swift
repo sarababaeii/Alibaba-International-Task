@@ -1,20 +1,20 @@
 //
-//  Header1Label.swift
+//  Header2Label.swift
 //  Task
 //
-//  Created by Sara Babaei on 2/6/22.
+//  Created by Sara Babaei on 2/7/22.
 //
 
 import UIKit
 
-class Header1Label: CustomLabel {
+class Header2Label: CustomLabel {
     
     override func didMoveToSuperview() {
         setTextStyle()
     }
 
     private func setTextStyle() {
-        self.font = .header1
+        self.font = .header2
         self.textColor = .black
     }
 }

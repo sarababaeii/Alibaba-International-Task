@@ -22,6 +22,11 @@ extension String {
         return "SearchViewControllerID"
     }
     
+    //MARK: Segue Identifiers
+    static var homeToSearchSegue: String {
+        return "HomeToSearchSegue"
+    }
+    
     //MARK: Cell Identifiers
     static var userCellID: String {
         return "UserCellID"

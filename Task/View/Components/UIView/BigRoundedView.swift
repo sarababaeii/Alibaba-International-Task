@@ -1,13 +1,13 @@
 //
-//  RoundedView.swift
+//  BigRoundedView.swift
 //  Task
 //
-//  Created by Sara Babaei on 2/5/22.
+//  Created by Sara Babaei on 2/7/22.
 //
 
 import UIKit
 
-@IBDesignable class RoundedView: CustomView {
+@IBDesignable class BigRoundedView: CustomView {
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
@@ -15,6 +15,6 @@ import UIKit
     }
     
     private func setRadius() {
-        self.cornerRadius = 8
+        self.cornerRadius = 12
     }
 }

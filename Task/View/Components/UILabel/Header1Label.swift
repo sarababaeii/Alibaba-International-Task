@@ -1,5 +1,5 @@
 //
-//  BodyLabel.swift
+//  Header1Label.swift
 //  Task
 //
 //  Created by Sara Babaei on 2/6/22.
@@ -7,19 +7,14 @@
 
 import UIKit
 
-class BodyLabel: CustomLabel {
+class Header1Label: CustomLabel {
     
     override func didMoveToSuperview() {
-        setIsMultiLine()
         setTextStyle()
     }
 
-    private func setIsMultiLine() {
-        self.isMultiLine = true
-    }
-    
     private func setTextStyle() {
-        self.font = .body1
+        self.font = .header1
         self.textColor = .black
     }
 }

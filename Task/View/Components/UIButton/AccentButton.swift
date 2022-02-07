@@ -23,4 +23,8 @@ import UIKit
         self.titleLabel?.font = .button1
         self.titleLabel?.textColor = .white
     }
+    
+    func changeAbility(to isEnabled: Bool) {
+        self.isEnabled = isEnabled
+    }
 }
