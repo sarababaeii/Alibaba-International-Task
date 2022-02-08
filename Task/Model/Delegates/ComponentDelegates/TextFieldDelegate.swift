@@ -16,6 +16,11 @@ class TextFieldDelegate: NSObject, UITextFieldDelegate {
         self.viewController = viewController
     }
     
+    //MARK: Begin Editing
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        viewController.currentTextField = textField
+    }
+    
     //MARK: Change Editing
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 //        print(textField.fetchInput())
@@ -54,5 +59,13 @@ class TextFieldDelegate: NSObject, UITextFieldDelegate {
         } else {
             viewController.data[textField.tag] = ""
         }
+    }
+    
+    //MARK: Return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if viewController.textFields.count > textField.tag + 1 {
+            viewController.textFields[textField.tag + 1].becomeFirstResponder()
+        }
+        return true
     }
 }

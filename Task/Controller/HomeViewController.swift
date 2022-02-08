@@ -46,6 +46,7 @@ class HomeViewController: DestinationyViewController {
     }
     
     private func generateUsers() -> [User] {
+        REST_API_Manager.sharedInstance.getUsers()
         var users = [User]()
         for _ in 0 ..< 4 {
             users.append(User(name: "George Bluth", email: "george.bluth@reqres.in", image: UIImage(named: "1-image")!))
@@ -55,9 +56,19 @@ class HomeViewController: DestinationyViewController {
     
     //MARK: Buttons Functionalities
     @IBAction func closeWelcomeView(_ sender: Any) {
-        welcomeView.isHidden = true
-        usersViewTopConstraint.constant = 24
-        usersViewTopConstraint.isActive = true
+        hideKeyboard(sender)
+        hideView(welcomeView, in: 1.0, damping: 0.5, initialVelocity: 0.5)
+    }
+    
+    private func hideView(_ view: UIView, in time: TimeInterval, damping: CGFloat, initialVelocity: CGFloat) {
+        UIView.animate(withDuration: time, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: initialVelocity, options: .allowUserInteraction, animations: {
+            view.alpha = 0
+            self.usersViewTopConstraint.constant = 24
+            self.usersViewTopConstraint.isActive = true
+            self.view.layoutIfNeeded()
+           }, completion: {_ in
+            view.isHidden = true
+          })
     }
     
     @IBAction func searchDestination(_ sender: Any) {
@@ -79,4 +90,3 @@ class HomeViewController: DestinationyViewController {
 }
 
 //TODO: API Management
-//TODO: Animation

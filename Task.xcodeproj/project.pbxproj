@@ -28,6 +28,11 @@
 		DE7873BF27AEEDD400BF1508 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873BE27AEEDD400BF1508 /* CustomButton.swift */; };
 		DE7873C127AEEE1700BF1508 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873C027AEEE1700BF1508 /* RoundedView.swift */; };
 		DE7873C327AEEE3F00BF1508 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7873C227AEEE3F00BF1508 /* RoundedButton.swift */; };
+		DE95F28E27B2CFAA00357146 /* API_Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95F28D27B2CFAA00357146 /* API_Address.swift */; };
+		DE95F29027B2D09500357146 /* API_RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95F28F27B2D09500357146 /* API_RequestType.swift */; };
+		DE95F29227B2D0F200357146 /* REST_API_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95F29127B2D0F200357146 /* REST_API_Manager.swift */; };
+		DE95F29427B2D17500357146 /* REST_API_Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95F29327B2D17500357146 /* REST_API_Result.swift */; };
+		DE95F29827B2D55400357146 /* JSON_Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95F29727B2D55400357146 /* JSON_Serializer.swift */; };
 		DEF896F227AFB795008371CF /* BlueBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896F127AFB795008371CF /* BlueBorderedView.swift */; };
 		DEF896F427AFB7F6008371CF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896F327AFB7F6008371CF /* UIColor.swift */; };
 		DEF896F627AFB872008371CF /* BorderedRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896F527AFB872008371CF /* BorderedRoundedView.swift */; };
@@ -94,6 +99,11 @@
 		DE7873BE27AEEDD400BF1508 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		DE7873C027AEEE1700BF1508 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		DE7873C227AEEE3F00BF1508 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		DE95F28D27B2CFAA00357146 /* API_Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Address.swift; sourceTree = "<group>"; };
+		DE95F28F27B2D09500357146 /* API_RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_RequestType.swift; sourceTree = "<group>"; };
+		DE95F29127B2D0F200357146 /* REST_API_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST_API_Manager.swift; sourceTree = "<group>"; };
+		DE95F29327B2D17500357146 /* REST_API_Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST_API_Result.swift; sourceTree = "<group>"; };
+		DE95F29727B2D55400357146 /* JSON_Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_Serializer.swift; sourceTree = "<group>"; };
 		DEF896F127AFB795008371CF /* BlueBorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBorderedView.swift; sourceTree = "<group>"; };
 		DEF896F327AFB7F6008371CF /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		DEF896F527AFB872008371CF /* BorderedRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedRoundedView.swift; sourceTree = "<group>"; };
@@ -231,6 +241,7 @@
 		DE7873B227AEDD2F00BF1508 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DE95F28C27B2CF9100357146 /* APIClasses */,
 				DEF8971227B0525D008371CF /* User.swift */,
 				DEF8970C27B04D8C008371CF /* Delegates */,
 				DE368CE327B1BAC0001CEB8F /* Date.swift */,
@@ -295,6 +306,18 @@
 				DEF8970227AFC3B3008371CF /* CloseButton.swift */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		DE95F28C27B2CF9100357146 /* APIClasses */ = {
+			isa = PBXGroup;
+			children = (
+				DE95F29127B2D0F200357146 /* REST_API_Manager.swift */,
+				DE95F29327B2D17500357146 /* REST_API_Result.swift */,
+				DE95F28D27B2CFAA00357146 /* API_Address.swift */,
+				DE95F28F27B2D09500357146 /* API_RequestType.swift */,
+				DE95F29727B2D55400357146 /* JSON_Serializer.swift */,
+			);
+			path = APIClasses;
 			sourceTree = "<group>";
 		};
 		DEF896F927AFBACB008371CF /* UILabel */ = {
@@ -497,6 +520,8 @@
 				DE368CDD27B19FDE001CEB8F /* DestinationyViewController.swift in Sources */,
 				DEF8971527B058E5008371CF /* UIViewController.swift in Sources */,
 				DE368CD627B12071001CEB8F /* Body2Label.swift in Sources */,
+				DE95F28E27B2CFAA00357146 /* API_Address.swift in Sources */,
+				DE95F29227B2D0F200357146 /* REST_API_Manager.swift in Sources */,
 				DEF8970527B02820008371CF /* GrayBorderedView.swift in Sources */,
 				DE368CE427B1BAC0001CEB8F /* Date.swift in Sources */,
 				DE368CD827B18C31001CEB8F /* FormViewController.swift in Sources */,
@@ -507,12 +532,15 @@
 				DEF8971827B05C22008371CF /* UITextField.swift in Sources */,
 				DEF8971327B0525D008371CF /* User.swift in Sources */,
 				DEF896F827AFBA7B008371CF /* AccentButton.swift in Sources */,
+				DE95F29427B2D17500357146 /* REST_API_Result.swift in Sources */,
 				DEF896FD27AFBE4F008371CF /* UIFont.swift in Sources */,
+				DE95F29027B2D09500357146 /* API_RequestType.swift in Sources */,
 				DEF8970927B04CCD008371CF /* UserTableViewCell.swift in Sources */,
 				DEF8971127B04E2B008371CF /* Strings.swift in Sources */,
 				DEF8970727B04C0B008371CF /* SearchViewController.swift in Sources */,
 				DE7873B727AEE03200BF1508 /* SceneDelegate.swift in Sources */,
 				DEF8970127AFC0D1008371CF /* Body1Label.swift in Sources */,
+				DE95F29827B2D55400357146 /* JSON_Serializer.swift in Sources */,
 				DE7873BF27AEEDD400BF1508 /* CustomButton.swift in Sources */,
 				DEF8970327AFC3B3008371CF /* CloseButton.swift in Sources */,
 				DEF896F627AFB872008371CF /* BorderedRoundedView.swift in Sources */,
