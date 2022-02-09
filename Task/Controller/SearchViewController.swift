@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchViewController: DestinationyViewController {
+class SearchViewController: DestinationyViewController, Form {
 
     @IBOutlet weak var originTextField: BottomBorderedTextField!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -23,14 +23,17 @@ class SearchViewController: DestinationyViewController {
     //MARK: Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure()
+        configure(self)
     }
     
-    override func initializeTextFields() {
+    func initializeTextFields() {
         textFields = [originTextField, destinationTextField]
     }
     
     @IBAction func search(_ sender: Any) {
+        if sender is UITextField && !searchButton.isEnabled {
+            return
+        }
         if let destination = destinationTextField.fetchInput() {
             callback?(destination)
         }

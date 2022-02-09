@@ -7,8 +7,11 @@
 
 import UIKit
 
+protocol Form {
+    func initializeTextFields()
+}
+
 class FormViewController: UIViewController {
-    
     
     @IBOutlet weak var searchButton: AccentButton!
     
@@ -18,14 +21,11 @@ class FormViewController: UIViewController {
     var data = [String]()
     
     //MARK: Initialization
-    func configure() {
-        initializeTextFields()
+    func configure(_ form: Form) {
+        form.initializeTextFields()
         setTextFieldDelegates()
         initializeData()
     }
-    
-    func initializeTextFields() {
-    } //TODO Set protocol
     
     private func setTextFieldDelegates() {
         for i in 0 ..< textFields.count {

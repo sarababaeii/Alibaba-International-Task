@@ -23,9 +23,10 @@ class TextFieldDelegate: NSObject, UITextFieldDelegate {
     
     //MARK: Change Editing
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        print(textField.fetchInput())
-//        print(string)
-//        print(range)
+        print(range)
+        if isStartingSpace(textField, replacementString: string, in: range) {
+            return false
+        }
         for tf in viewController.textFields {
             if isTextFieldEmpty(tf, currentTextField: textField, replacementString: string, range: range) {
                 viewController.searchButton.changeAbility(to: false)
@@ -34,6 +35,11 @@ class TextFieldDelegate: NSObject, UITextFieldDelegate {
         }
         viewController.searchButton.changeAbility(to: true)
         return true
+    }
+    
+    private func isStartingSpace(_ textField: UITextField, replacementString string: String, in range: NSRange) -> Bool {
+        return string.trimmingCharacters(in: .whitespaces).count == 0 &&
+            (textField.fetchInput() == nil || (range.lowerBound == 0 && range.upperBound == 0))
     }
     
     private func isTextFieldEmpty(_ textField: UITextField, currentTextField: UITextField, replacementString string: String, range: NSRange) -> Bool {
@@ -46,7 +52,7 @@ class TextFieldDelegate: NSObject, UITextFieldDelegate {
         default:
             return textField.fetchInput() == nil
         }
-    } //TODO: "  h\"
+    }
 
     //MARK: End Editing
     func textFieldDidEndEditing(_ textField: UITextField) {

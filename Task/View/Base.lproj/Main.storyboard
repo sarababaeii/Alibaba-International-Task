@@ -361,7 +361,10 @@
                                             <constraint firstAttribute="height" constant="45" id="lrG-Ty-XuZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="location"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES" textContentType="location"/>
+                                        <connections>
+                                            <action selector="search:" destination="Zd5-qA-QF5" eventType="primaryActionTriggered" id="7Ch-6H-50B"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

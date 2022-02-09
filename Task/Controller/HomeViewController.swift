@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: DestinationyViewController {
+class HomeViewController: DestinationyViewController, Form {
 
     @IBOutlet weak var welcomeView: WelcomeView!
     @IBOutlet weak var usersTableView: UITableView!
@@ -26,16 +26,16 @@ class HomeViewController: DestinationyViewController {
     //MARK: Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure()
+        configure(self)
     }
     
-    override func configure() {
-        super.configure()
+    override func configure(_ form: Form) {
+        super.configure(form)
         setTopUsers()
         setTableViewDelegate(for: [User]())
     }
     
-    override func initializeTextFields() {
+    func initializeTextFields() {
         textFields = [destinationTextField]
     }
     
@@ -65,6 +65,9 @@ class HomeViewController: DestinationyViewController {
     }
     
     @IBAction func searchDestination(_ sender: Any) {
+        if sender is UITextField && !searchButton.isEnabled {
+            return
+        }
         self.activeSegue(with: .homeToSearchSegue)
     }
     

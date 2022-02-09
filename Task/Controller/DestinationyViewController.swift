@@ -14,8 +14,8 @@ class DestinationyViewController: FormViewController {
     var destination = ""
     
     //MARK: Initialization
-    override func configure() {
-        super.configure()
+    override func configure(_ form: Form) {
+        super.configure(form)
         setDestinationText(to: destination)
     }
     
