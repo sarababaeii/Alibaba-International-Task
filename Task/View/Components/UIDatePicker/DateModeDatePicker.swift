@@ -11,33 +11,19 @@ class DateModeDatePicker: UIDatePicker {
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
-        self.setUp(mode: .dateAndTime)
-//        setDefaultDate()
-//        setMinDate()
+        self.setUp(mode: .date)
+        setDefaultDate()
+        setMinDate()
     }
     
     private func setDefaultDate() {
-        print(self.date)
-        if let tomorrow = self.date.nextDay() {
-            print(tomorrow)
+        if let tomorrow = Date().nextDay() {
             self.date = tomorrow
         }
-        print(self.date)
-//        print(self.timeZone)
-//        print(Date())
-//        if let tomorrow = Date().nextDay(),
-//           let gmt = TimeZone(secondsFromGMT: 0) {
-//            let currentTomorrow = tomorrow.convertToTimeZone(from: gmt, to: .current)
-//            print(tomorrow)
-//            print(gmt)
-//            print(currentTomorrow)
-//            self.date = currentTomorrow
-//        }
     }
     
     private func setMinDate() {
-        if let gmt = TimeZone(secondsFromGMT: 0) {
-            self.minimumDate = Date().convertToTimeZone(from: gmt, to: .current)
-        }
+        let todady = Date()
+        self.minimumDate = todady
     }
 }
