@@ -153,7 +153,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.188026309" green="0.69001793860000005" blue="0.77955490350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" textContentType="location"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="go" enablesReturnKeyAutomatically="YES" textContentType="address-level2"/>
                                         <connections>
                                             <action selector="searchDestination:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="fsN-Jn-hh2"/>
                                         </connections>
@@ -351,7 +351,7 @@
                                             <constraint firstAttribute="height" constant="45" id="nMU-4J-wPJ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="location"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="address-level2"/>
                                     </textField>
                                     <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFZ-tu-cE9" customClass="BottomBorderedTextField" customModule="Task" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55" width="345" height="45"/>
@@ -361,7 +361,7 @@
                                             <constraint firstAttribute="height" constant="45" id="lrG-Ty-XuZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES" textContentType="location"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="search" enablesReturnKeyAutomatically="YES" textContentType="address-level2"/>
                                         <connections>
                                             <action selector="search:" destination="Zd5-qA-QF5" eventType="primaryActionTriggered" id="7Ch-6H-50B"/>
                                         </connections>
@@ -398,7 +398,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLb-Yq-xNN" customClass="AccentButton" customModule="Task" customModuleProvider="target">
-                                <rect key="frame" x="24" y="728" width="327" height="50"/>
+                                <rect key="frame" x="24" y="718" width="327" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="RDY-cs-72v"/>
                                 </constraints>
@@ -418,7 +418,7 @@
                             <constraint firstItem="UMN-J7-cU0" firstAttribute="leading" secondItem="gWv-wL-kOY" secondAttribute="leading" constant="18" id="JLK-Ec-Tyc"/>
                             <constraint firstItem="gWv-wL-kOY" firstAttribute="trailing" secondItem="oLb-Yq-xNN" secondAttribute="trailing" constant="24" id="Naj-H7-qSw"/>
                             <constraint firstItem="Ksd-Vo-vAr" firstAttribute="leading" secondItem="UMN-J7-cU0" secondAttribute="leading" id="PO8-R9-DgE"/>
-                            <constraint firstItem="gWv-wL-kOY" firstAttribute="bottom" secondItem="oLb-Yq-xNN" secondAttribute="bottom" id="R5o-s0-8tH"/>
+                            <constraint firstItem="gWv-wL-kOY" firstAttribute="bottom" secondItem="oLb-Yq-xNN" secondAttribute="bottom" constant="10" id="R5o-s0-8tH"/>
                             <constraint firstItem="Ksd-Vo-vAr" firstAttribute="top" secondItem="UMN-J7-cU0" secondAttribute="bottom" constant="24" id="Thf-XJ-aB6"/>
                             <constraint firstItem="oLb-Yq-xNN" firstAttribute="leading" secondItem="gWv-wL-kOY" secondAttribute="leading" constant="24" id="UIf-M7-Ud7"/>
                             <constraint firstItem="Ksd-Vo-vAr" firstAttribute="trailing" secondItem="UMN-J7-cU0" secondAttribute="trailing" id="ViY-42-T0s"/>
@@ -442,7 +442,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1623" y="78"/>
+            <point key="canvasLocation" x="1621.5999999999999" y="77.58620689655173"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="4nc-jj-Vvc">
