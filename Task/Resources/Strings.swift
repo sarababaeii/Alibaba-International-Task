@@ -41,29 +41,4 @@ extension String {
     static var searchTitle: String {
         return "Search"
     }
-    
-    //MARK: Prepared Texts
-//    static var shareRoomCode: String {
-//      return "بیا بومچه\n"
-//    }
-//
-//    static var copyRoomCode: String {
-//        return "کد کپی شد."
-//    }
-//
-//    static var startGameButton: String {
-//        return "بزن بریم"
-//    }
-//
-//    static var chatTextViewPlaceholder: String {
-//        return "تایپ کن"
-//    }
-//
-//    static var letterDash: String {
-//        return "_"
-//    }
-//
-//    static var newLine: String {
-//        return "\n"
-//    }
 }

@@ -245,9 +245,9 @@
 			children = (
 				DE95F28C27B2CF9100357146 /* APIClasses */,
 				DEF8970C27B04D8C008371CF /* Delegates */,
-				DE368CE327B1BAC0001CEB8F /* Date.swift */,
 				DE1C013327B3EA4E007454ED /* UsersList.swift */,
 				DEF8971227B0525D008371CF /* User.swift */,
+				DE368CE327B1BAC0001CEB8F /* Date.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

@@ -23,7 +23,6 @@ class TextFieldDelegate: NSObject, UITextFieldDelegate {
     
     //MARK: Change Editing
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        print(range)
         if isStartingSpace(textField, replacementString: string, in: range) {
             return false
         }
