@@ -1,5 +1,5 @@
 //
-//  API_Address.swift
+//  APIAddress.swift
 //  Task
 //
 //  Created by Sara Babaei on 2/8/22.
@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct API_Address {
+struct APIAddress {
     
     private static let server = "https://reqres.in/"
-    private static let base = API_Address.server + "api/"
+    private static let base = APIAddress.server + "api/"
     
-    private static let users = API_Address.base + "users"
+    private static let users = APIAddress.base + "users"
     
-    static let getUsersURL = URL(string: API_Address.users)!
+    static let getUsersURL = URL(string: APIAddress.users)!
     
 //    //MARK: Clinitick Blog
 //    private static let blogServer = "https://blog.clinitick.com/"

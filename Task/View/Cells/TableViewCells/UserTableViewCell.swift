@@ -20,7 +20,7 @@ class UserTableViewCell: UITableViewCell {
     }
     
     private func setName(for user: User) {
-        userNameLabel.text = user.name
+        userNameLabel.text = user.firstName + user.lastName
     }
     
     private func setEmail(for user: User) {
@@ -28,6 +28,6 @@ class UserTableViewCell: UITableViewCell {
     }
     
     private func setImage(for user: User) {
-        userImageView.image = user.image
+//        userImageView.image = user.image
     }
 }

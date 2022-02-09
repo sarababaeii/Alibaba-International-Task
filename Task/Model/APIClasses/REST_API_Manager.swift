@@ -13,20 +13,6 @@ class REST_API_Manager {
     private init() {
     }
     
-    //MARK: Sending A Request
-    private func sendRequest(request: URLRequest, type: API_RequestType, _ completion: @escaping (REST_API_Result) -> ()) {
-        let session = URLSession(configuration: .default)
-        let task = session.dataTask(with: request) { (data, response, error) in
-            if let data = data {
-                let responseString = String(data: data, encoding: .utf8)
-                print("\(type)\nMy response --> \(String(describing: responseString))")
-            }
-            let result = REST_API_Result(data: data, response: response as? HTTPURLResponse)
-            completion(result)
-        }
-        task.resume()
-    }
-    
     //MARK: Creating A Request
     private func createGetRequest(url: URL) -> URLRequest {
         var request = URLRequest(url: url)
@@ -36,10 +22,14 @@ class REST_API_Manager {
     
     //MARK: Creating Specific Request
     private func createGetUsersRequest() -> URLRequest {
-        return createGetRequest(url: API_Address.getUsersURL)
+        return createGetRequest(url: APIAddress.getUsersURL)
     }
     
-    func getUsers() {
-        sendRequest(request: createGetUsersRequest(), type: .getUsers, {_ in })
+    func getUsers(_ completion: @escaping ([User]?) -> ()) {
+        let getUsersRequest = createGetUsersRequest()
+        getUsersRequest.execute({ result in
+            let users = result.getUsersList()
+            completion(users)
+        })
     }
 }

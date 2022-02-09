@@ -39,6 +39,11 @@ class UsersTableViewDelegates: NSObject, UITableViewDelegate, UITableViewDataSou
     }
 
     //MARK: Functions
+    func updateUsers(to users: [User]) {
+        self.users = users
+        self.tableView.reloadData()
+    }
+    
     func insertUser(_ user: User) {
         let indexPath = getNewIndexPath()
         users.insert(user, at: indexPath.row)

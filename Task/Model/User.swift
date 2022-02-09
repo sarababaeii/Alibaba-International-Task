@@ -7,14 +7,22 @@
 
 import UIKit
 
-class User {
-    var name: String
-    var email: String
-    var image: UIImage
+struct User {
     
-    init(name: String, email: String, image: UIImage) {
-        self.name = name
-        self.email = email
-        self.image = image
+    var id: Int
+    var firstName: String
+    var lastName: String
+    var email: String
+    var avatarLink: URL
+    var avatar: UIImage?
+}
+
+extension User: Decodable {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case firstName
+        case lastName
+        case email
+        case avatarLink = "avatar"
     }
 }
