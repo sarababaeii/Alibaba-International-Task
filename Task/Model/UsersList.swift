@@ -8,6 +8,7 @@
 import Foundation
 
 struct UsersList {
+    
     var page: Int
     var totalPages: Int
     var users: [User]

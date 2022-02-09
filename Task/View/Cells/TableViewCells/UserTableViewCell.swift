@@ -16,7 +16,6 @@ class UserTableViewCell: UITableViewCell {
     func setAttributes(for user: User) {
         setName(for: user)
         setEmail(for: user)
-        setImage(for: user)
     }
     
     private func setName(for user: User) {
@@ -27,7 +26,7 @@ class UserTableViewCell: UITableViewCell {
         userEmailLabel.text = user.email
     }
     
-    private func setImage(for user: User) {
-//        userImageView.image = user.image
+    func setImage(to image: UIImage) {
+        userImageView.image = image
     }
 }

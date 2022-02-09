@@ -27,8 +27,20 @@ class UsersTableViewDelegates: NSObject, UITableViewDelegate, UITableViewDataSou
         let cell = tableView.dequeueReusableCell(withIdentifier: String.userCellID, for: indexPath) as! UserTableViewCell
         if let user = usersDataSource(at: indexPath) {
             cell.setAttributes(for: user)
+            setImage(for: user, at: cell)
         }
         return cell
+    }
+    
+    private func setImage(for user: User, at cell: UserTableViewCell) {
+        user.getAvatarData({ data in
+            if let data = data,
+               let img = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    cell.setImage(to: img)
+                }
+            }
+        })
     }
     
     func usersDataSource(at indexPath: IndexPath) -> User? {

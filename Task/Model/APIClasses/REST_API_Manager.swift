@@ -25,11 +25,23 @@ class REST_API_Manager {
         return createGetRequest(url: APIAddress.getUsersURL)
     }
     
+    private func createGetAvatarRequest(for user: User) -> URLRequest {
+        return createGetRequest(url: user.avatarURL)
+    }
+    
+    //MARK: Interface Functions
     func getUsers(_ completion: @escaping ([User]?) -> ()) {
-        let getUsersRequest = createGetUsersRequest()
-        getUsersRequest.execute({ result in
+        let request = createGetUsersRequest()
+        request.execute({ result in
             let users = result.getUsersList()
             completion(users)
+        })
+    }
+    
+    func getAvatarData(for user: User, _ completion: @escaping (Data?) -> ()) {
+        let request = createGetAvatarRequest(for: user)
+        request.execute({result in
+            completion(result.data)
         })
     }
 }
