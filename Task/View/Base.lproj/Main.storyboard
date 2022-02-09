@@ -121,17 +121,17 @@
                                     <constraint firstAttribute="width" secondItem="EtV-2j-t9N" secondAttribute="height" multiplier="12:8" id="sG1-W9-1zH"/>
                                 </constraints>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzP-Od-TTI" customClass="BlueBorderedView" customModule="Task" customModuleProvider="target">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzP-Od-TTI" customClass="WelcomeView" customModule="Task" customModuleProvider="target">
                                 <rect key="frame" x="24" y="348" width="327" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQq-tS-hRP" userLabel="Header1 Label" customClass="Header1Label" customModule="Task" customModuleProvider="target">
-                                        <rect key="frame" x="12.000000000000007" y="18" width="117.66666666666669" height="21"/>
+                                        <rect key="frame" x="11.999999999999993" y="18" width="122.33333333333331" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here to help keep you on the move. Where do you want to travel?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzF-VL-CaB" userLabel="Body1 Label" customClass="Body1Label" customModule="Task" customModuleProvider="target">
-                                        <rect key="frame" x="12" y="45" width="285.66666666666669" height="20.333333333333329"/>
+                                        <rect key="frame" x="12" y="45" width="285.66666666666669" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -194,22 +194,34 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a76-dS-L1P">
                                 <rect key="frame" x="24" y="500" width="327" height="278"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Users" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkt-lX-R0w" customClass="Header1Label" customModule="Task" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="12" width="77" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NfA-IW-yza">
-                                        <rect key="frame" x="0.0" y="45" width="327" height="233"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="45" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NfA-IW-yza">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="278"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <view key="tableHeaderView" contentMode="scaleToFill" id="7Ll-lA-0tS">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="45"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Users" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkt-lX-R0w" customClass="Header1Label" customModule="Task" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="12" width="79.666666666666671" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="xkt-lX-R0w" firstAttribute="centerY" secondItem="7Ll-lA-0tS" secondAttribute="centerY" id="HT6-5z-WIs"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xkt-lX-R0w" secondAttribute="trailing" constant="20" symbolic="YES" id="KHx-EG-utj"/>
+                                                <constraint firstItem="xkt-lX-R0w" firstAttribute="leading" secondItem="7Ll-lA-0tS" secondAttribute="leading" id="SpN-2S-jTO"/>
+                                            </constraints>
+                                        </view>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserCellID" id="lnB-JN-kuD" customClass="UserTableViewCell" customModule="Task" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="24.333333969116211" width="327" height="80"/>
+                                                <rect key="frame" x="0.0" y="69.333333969116211" width="327" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lnB-JN-kuD" id="20b-zL-O0M">
                                                     <rect key="frame" x="0.0" y="0.0" width="327" height="80"/>
@@ -223,13 +235,13 @@
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="George Bluth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ern-kI-u0y" customClass="Header2Label" customModule="Task" customModuleProvider="target">
-                                                                    <rect key="frame" x="147" y="13.66666666666667" width="100" height="20.333333333333329"/>
+                                                                    <rect key="frame" x="147" y="17" width="88.333333333333314" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="george.bluth@reqres.in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1b6-wP-hVE" customClass="Body2Label" customModule="Task" customModuleProvider="target">
-                                                                    <rect key="frame" x="147" y="38" width="160" height="20.333333333333329"/>
+                                                                    <rect key="frame" x="147" y="38" width="152" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -270,13 +282,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="xkt-lX-R0w" firstAttribute="top" secondItem="a76-dS-L1P" secondAttribute="top" constant="12" id="AuA-IY-qxY"/>
                                     <constraint firstAttribute="trailing" secondItem="NfA-IW-yza" secondAttribute="trailing" id="DKh-d7-g56"/>
                                     <constraint firstAttribute="bottom" secondItem="NfA-IW-yza" secondAttribute="bottom" id="EFd-C2-82h"/>
                                     <constraint firstItem="NfA-IW-yza" firstAttribute="leading" secondItem="a76-dS-L1P" secondAttribute="leading" id="Fn1-0q-Tnt"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xkt-lX-R0w" secondAttribute="trailing" constant="20" symbolic="YES" id="NCa-hc-5Vl"/>
-                                    <constraint firstItem="xkt-lX-R0w" firstAttribute="leading" secondItem="a76-dS-L1P" secondAttribute="leading" id="Sed-iQ-q4V"/>
-                                    <constraint firstItem="NfA-IW-yza" firstAttribute="top" secondItem="xkt-lX-R0w" secondAttribute="bottom" constant="12" id="x7T-2i-qXN"/>
+                                    <constraint firstItem="NfA-IW-yza" firstAttribute="top" secondItem="a76-dS-L1P" secondAttribute="top" id="KEj-xQ-K5I"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -311,6 +320,7 @@
                         <outlet property="usersTableView" destination="NfA-IW-yza" id="2Gb-GB-ra3"/>
                         <outlet property="usersViewTopConstraint" destination="zNr-3P-rIg" id="ydL-hb-Wg3"/>
                         <outlet property="welcomeView" destination="RzP-Od-TTI" id="ZB4-oC-Nw0"/>
+                        <outlet property="welcomeViewBottomConstraint" destination="fSw-aV-JaL" id="pdT-4O-37S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -320,7 +330,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="774" y="78"/>
+            <point key="canvasLocation" x="773.60000000000002" y="77.58620689655173"/>
         </scene>
         <!--Search-->
         <scene sceneID="2tY-fu-dqa">
@@ -551,7 +561,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Users" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cw-pX-e9n" customClass="Header1Label" customModule="Task" customModuleProvider="target">
-                                    <rect key="frame" x="24" y="12" width="77" height="21"/>
+                                    <rect key="frame" x="24" y="12" width="79.666666666666671" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -579,13 +589,13 @@
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="George Bluth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5n9-NG-xdI" customClass="Header2Label" customModule="Task" customModuleProvider="target">
-                                                                <rect key="frame" x="147" y="13.66666666666667" width="100" height="20.333333333333329"/>
+                                                                <rect key="frame" x="147" y="17" width="88.333333333333314" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="george.bluth@reqres.in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5D-jw-reS" customClass="Body2Label" customModule="Task" customModuleProvider="target">
-                                                                <rect key="frame" x="147" y="38" width="160" height="20.333333333333329"/>
+                                                                <rect key="frame" x="147" y="38" width="152" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -649,13 +659,13 @@
                                                     <rect key="frame" x="24" y="9" width="327" height="128"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UID-Qq-HpZ" userLabel="Header1 Label" customClass="Header1Label" customModule="Task" customModuleProvider="target">
-                                                            <rect key="frame" x="12.000000000000007" y="18" width="117.66666666666669" height="21"/>
+                                                            <rect key="frame" x="11.999999999999993" y="18" width="122.33333333333331" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here to help keep you on the move. Where do you want to travel?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbG-5E-Hf6" userLabel="Body1 Label" customClass="Body1Label" customModule="Task" customModuleProvider="target">
-                                                            <rect key="frame" x="12" y="45" width="285.66666666666669" height="20.333333333333329"/>
+                                                            <rect key="frame" x="12" y="45" width="285.66666666666669" height="28.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>

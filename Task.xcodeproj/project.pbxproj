@@ -33,6 +33,7 @@
 		DE95F28E27B2CFAA00357146 /* APIAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95F28D27B2CFAA00357146 /* APIAddress.swift */; };
 		DE95F29227B2D0F200357146 /* REST_API_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95F29127B2D0F200357146 /* REST_API_Manager.swift */; };
 		DE95F29427B2D17500357146 /* REST_API_Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95F29327B2D17500357146 /* REST_API_Result.swift */; };
+		DEE19A4827B436F8008D43A1 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE19A4727B436F8008D43A1 /* WelcomeView.swift */; };
 		DEF896F227AFB795008371CF /* BlueBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896F127AFB795008371CF /* BlueBorderedView.swift */; };
 		DEF896F427AFB7F6008371CF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896F327AFB7F6008371CF /* UIColor.swift */; };
 		DEF896F627AFB872008371CF /* BorderedRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF896F527AFB872008371CF /* BorderedRoundedView.swift */; };
@@ -104,6 +105,7 @@
 		DE95F28D27B2CFAA00357146 /* APIAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAddress.swift; sourceTree = "<group>"; };
 		DE95F29127B2D0F200357146 /* REST_API_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST_API_Manager.swift; sourceTree = "<group>"; };
 		DE95F29327B2D17500357146 /* REST_API_Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST_API_Result.swift; sourceTree = "<group>"; };
+		DEE19A4727B436F8008D43A1 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DEF896F127AFB795008371CF /* BlueBorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBorderedView.swift; sourceTree = "<group>"; };
 		DEF896F327AFB7F6008371CF /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		DEF896F527AFB872008371CF /* BorderedRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedRoundedView.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				DEF896F527AFB872008371CF /* BorderedRoundedView.swift */,
 				DEF896F127AFB795008371CF /* BlueBorderedView.swift */,
 				DEF8970427B02820008371CF /* GrayBorderedView.swift */,
+				DEE19A4727B436F8008D43A1 /* WelcomeView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				DE95F29427B2D17500357146 /* REST_API_Result.swift in Sources */,
 				DEF896FD27AFBE4F008371CF /* UIFont.swift in Sources */,
 				DEF8970927B04CCD008371CF /* UserTableViewCell.swift in Sources */,
+				DEE19A4827B436F8008D43A1 /* WelcomeView.swift in Sources */,
 				DEF8971127B04E2B008371CF /* Strings.swift in Sources */,
 				DE1C013427B3EA4E007454ED /* UsersList.swift in Sources */,
 				DEF8970727B04C0B008371CF /* SearchViewController.swift in Sources */,

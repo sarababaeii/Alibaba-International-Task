@@ -9,8 +9,9 @@ import UIKit
 
 class HomeViewController: DestinationyViewController {
 
-    @IBOutlet weak var welcomeView: UIView!
+    @IBOutlet weak var welcomeView: WelcomeView!
     @IBOutlet weak var usersTableView: UITableView!
+    @IBOutlet weak var welcomeViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var usersViewTopConstraint: NSLayoutConstraint!
     
     var usersTableViewDelegate: UsersTableViewDelegates?
@@ -60,18 +61,7 @@ class HomeViewController: DestinationyViewController {
     //MARK: Buttons Functionalities
     @IBAction func closeWelcomeView(_ sender: Any) {
         hideKeyboard(sender)
-        hideView(welcomeView, in: 1.0, damping: 0.5, initialVelocity: 0.5)
-    }
-    
-    private func hideView(_ view: UIView, in time: TimeInterval, damping: CGFloat, initialVelocity: CGFloat) {
-        UIView.animate(withDuration: time, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: initialVelocity, options: .allowUserInteraction, animations: {
-            view.alpha = 0
-            self.usersViewTopConstraint.constant = 24
-            self.usersViewTopConstraint.isActive = true
-            self.view.layoutIfNeeded()
-           }, completion: {_ in
-            view.isHidden = true
-          })
+        welcomeView.hide(from: self, newConstraint: usersViewTopConstraint, oldConstraint: welcomeViewBottomConstraint)
     }
     
     @IBAction func searchDestination(_ sender: Any) {

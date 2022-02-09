@@ -26,11 +26,6 @@ class SearchViewController: DestinationyViewController {
         configure()
     }
     
-//    override func configure() {
-//        super.configure()
-////        datePicker.setUp(mode: .date)
-//    }
-    
     override func initializeTextFields() {
         textFields = [originTextField, destinationTextField]
     }
